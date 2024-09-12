@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인과 블록의 차이</title>
+    <style>
+        h1{
+            padding: 10px;
+            background-color: violet;
+        }
+
+        p{
+            padding: 10px;
+            background-color: violet;
+        }
+
+        span{
+            padding: 10px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>이것은 블록태그로 만든 제목입니다
+        <a href=""></a>
+    </h1>
+    <!-- 블록은 인라인태그를 감쌀 수 있다 -->
+    <p>이것은 블록태그로 만든 설명입니다</p>
+    <span>이것은 인라인요소 내용1입니다</span>
+    <span>이것은 인라인요소 내용2입니다</span>
+    <span>이것은 인라인요소 내용3입니다</span>
+    <!-- 인라인태그는 인라인태그를 감쌀 수 있다 -->
+    ex
+    <span>이것은 내용입니다
+        <p></p>
+        <!-- 잘못된 구조! 인라인 안에는 블록이 들어갈 수 없다 -->
+    </span>
+
+</body>
+</html>
