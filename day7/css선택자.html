@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 선택자</title>
+    <style>
+        h1 {
+            color: blueviolet;
+        }
+
+        #id_section {
+            color: darkmagenta;
+        }
+
+        .web_level>li {
+            color: aquamarine;
+        }
+
+        .web_level>li>a {
+            text-decoration: none;
+            color: aquamarine;
+        }
+
+        .web_class_name ~ ul{
+            text-decoration: none;
+            background-color: darkmagenta;
+            color: black;
+        }
+
+        .front_end_languege ~ li {
+            background-color: aquamarine;
+        }
+        .china_food + li {
+            background-color: brown;
+        }
+
+        .p_tag, h3, #span_id {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>css 선택자</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Voluptate corrupti minus laboriosam quam repellendus placeat pariatur iste veritatis! Culpa quisquam
+        in dolores veniam eius illo consequuntur incidunt doloremque sequi libero.
+
+    </p>
+
+    <section id="id_section">
+        <h2>아이디 선택자</h2>
+    </section>
+    <section class="class_section">
+        <h2>클래스선택자</h2>
+    </section>
+
+    <ul class="web_level">
+        <li>웹1
+            <a href="#">
+                웹
+            </a>
+        </li>
+        <li>웹2</li>
+        <li>웹3</li>
+    </ul>
+    <ul class="web_class_name">
+        <li>
+            <a href="#">
+                웹1s
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                웹2
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                웹3
+            </a>
+        </li>
+
+    </ul>
+    <ul>
+        <li class="china_food">짜장면</li>
+        <li>짬뽕</li>
+        <li>유산슬</li>
+        <li>탕수육</li>
+        <li>군만두</li>
+    </ul>
+
+<div>
+    <p class="p_tag">p태그입니다</p>
+    <h3>h3입니다</h3>
+    <span id="span_id">span태그입니다</span>
+</div>
+
+</body>
+
+</html>

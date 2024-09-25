@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css적용방법</title>
     <link rel="stylesheet" href="./example.css">
+    <style>
+        .hello{
+            color: darkgreen;
+        }
+    </style>
 </head>
 <body>
     <h1>스타일속성실습</h1>
     <p style="color: blueviolet;">인라인스타일</p>
+    <!-- 재사용이 불가능하다 -->
+    <!-- 인라인 방식으로 스타일을 작성하면 재사용해야하는 부분도 하나하나 다
+    다시 작성해야하는 불편함-->
+    일반적인 웹을 구현하는 방법에서는 가장 기피하는 방식
 
     <p class="out_style_sheet">외부 스타일 시트</p>
+    가장 많이 사용하고 유용한 형태
+    html과 css를 완전히 분리한 형태로 재사용이 용이하다
+    일관된 디자인을 주로 하는 웹디자인 특성상 재사용이 용이하다는것은 굉장히 큰
+    장점입니다
+    <p class="hello">안녕하세요 오늘은 9월25일 입니다 내부스타일 실습중입니다</p>
+    
+    외부스타일시트보다 방법들보다 재사용성이 떨어짐
+    hmtl문서 내에 css가 들어가는 방식으로 다양한 예제파일을 많이 만들어야 하는
+    수업 특성상 우리는 내부스타일시트를 이용할 예정 실제작업은 외부스타일시트로 해야합니다!
 </body>
 </html>
