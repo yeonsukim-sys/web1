@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트정렬</title>
+    <style>
+        .text_align_left {
+            text-align: left;
+        }
+        .text_align_center {
+            text-align:center;
+        }
+        .text_align_right {
+            text-align: right;
+        }
+        .span_container {
+            text-align: center;
+        }
+
+
+        .vertical_1 > span {
+            text-align: top;
+            font-size: 16px;
+        }
+
+        .vertical_2 > span {
+            text-align: middle;
+            font-size: 16px;
+        }
+
+        .vertical_3 > span {
+            text-align: bottom;
+            font-size: 16px;
+        }
+
+        .vertical_container > p {
+            font-size: 50px;
+        }
+
+        .text_decoration_1 {
+            text-decoration: underline;
+        }
+
+        .text_decoration_2 {
+            text-decoration: line-through;
+        }
+
+        .text_decoration_3 {
+            text-decoration: overline;
+        }
+
+        .text-decoration_4 {
+            text-decoration: none;
+            color: black;
+        }
+
+        .line_height_1 {
+            line-height: 3;
+            font-size: 30px;
+        }
+
+        .line_height_2 {
+            line-height: 500%;
+        }
+
+        .line_height_3 {
+            line-height: 100px;
+            letter-spacing: -10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text_align_left">왼쪽으로 갈거임</div>
+    <div class="text_align_center">난 가운데</div>
+    <div class="text_align_right">오른쪽으로 갈거임</div>
+
+    
+    <div class="text_align_left">
+        <span>왼쪽으로 갈거임</span>
+    </div>
+
+    <div class="text_align_center">
+        <span>난 가운데</span>
+    </div>
+
+    <div class="text_align_right">
+        <span>오른쪽으로 갈거임</span>
+    </div>
+
+    <div class="vertical_container">
+        <p class="vertical_1">
+            서브텍스트 맨 위에 올라갈거임
+            <span>서브텍스트</span>
+        </p>
+
+        <div class="vertical_container">
+            <p class="vertical_2">
+                서브텍스트 가운데 올거임
+                <span>서브텍스트</span>
+            </p>
+
+            <div class="vertical_container">
+        <p class="vertical_3">
+            서브텍스트 밑에 붙일거임
+            <span>서브텍스트</span>
+        </p>
+        <hr>
+    </div>
+    <p class="text_decoration_1">텍스트 데코레이션</p>
+    <p class="text_decoration_2">텍스트 데코레이션</p>
+    <p class="text_decoration_3">텍스트 데코레이션</p>
+    <hr>
+
+    <a href="#" class="text-decoration_4">a태그 언더라인 지우기</a>
+
+    <p class="line_height_1">line_height실습</p>
+    <p class="line_height_2">line_height실습</p>
+    <p class="line_height_3">line_height실습</p>
+
+
+    
+</body>
+</html>
