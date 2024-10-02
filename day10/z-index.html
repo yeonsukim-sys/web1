@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .z_index {
+            position: relative;
+            border: 1px solid salmon;
+            height: 500px;
+        }
+
+        .z_index > div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .box1 {
+            background-color: crimson;
+            z-index: 1;
+        }
+
+        .box2 {
+            background-color: darkgray;
+            top: 25px;
+            left: 25px;
+            z-index: 2;
+        }
+
+        .box3 {
+            background-color: beige;
+            top: 50px;
+            left: 50px;
+        }
+        /*z-index : 요소의 순서를 임의로 변경할 수 있는 태그*/
+    </style>
+</head>
+<body>
+    <div class="z_index">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    
+</body>
+</html>

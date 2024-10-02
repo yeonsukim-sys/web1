@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경</title>
+    <style>
+        .box_container > div {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+        }
+
+        .box1 {
+            background-color: rgb(184, 11, 83);
+        }
+
+        .box2 {
+            background: rgb(255, 183, 248)
+        }
+
+        .box3 {
+            background-color: rgba(171, 200, 248, 0.2);
+        }
+
+        .img_container > div {
+            width: 200px;
+            height: 200px;
+            /* background-color: blueviolet; */
+            margin: 10px;
+            display: inline-block;
+            
+        }
+
+        .img1 {
+           background: url(./백그라운드\ 실습.jpg);
+           background-size: 150px 50px;
+           /*백그라운드 이미지를 원하는데로 사이즈를 px로 조절
+           하나으 값만 작성하면 가로값으로 작용되고 비율에 맞춰 이미지가 줄어들음.
+           두개의 값을 작성하면 가로, 세로 적용형*/
+           background-repeat: no-repeat
+           
+           
+        }
+        .img2 {
+           background: url(./백그라운드\ 실습.jpg)no-repeat;
+           background-size: 70% 50%;
+           /* 첫 시점부터 영역의 몇 %까지 차지하게 하고싶은지 지정하는 속성
+           현재 가로영역의 70%를 차지하겠다고 작성해놓은것!*/
+           background-position: 15px;
+
+        }
+        .img3 {
+           background: url(./백그라운드\ 실습.jpg);
+           background-size: contain;
+           /*배경 이미지를 요소의 내부에 잘리는 부분 없이 이미지의 모든
+           영역이 보여지는 속성*/
+        }
+        .img4 {
+           background: url(./백그라운드\ 실습.jpg);
+           background-size: cover;
+        }
+        .img5 {
+           background: url(./백그라운드\ 실습.jpg);
+           background-size: auto;
+        }
+
+        .scroll_img_container {
+            height: 10000px;
+        }
+
+        .scroll_1 {
+            background: url(./백그라운드\ 실습.jpg);
+            width: 500px;
+            height: 1000px;
+            background-size: cover;
+            background-attachment: scroll;
+            margin: 50px;
+        }
+
+        .scroll_2 {
+            background: url(./백그라운드\ 실습.jpg);
+            width: 500px;
+            height: 1000px;
+            background-size: cover;
+            background-attachment: scroll;
+            margin: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box_container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    <div class="img_container">
+        <div class="igm1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+    </div>
+
+    <div class="scroll_img_container">
+        <div class="scroll_1"></div>
+        <div class="scroll_2"></div>
+    </div>
+</body>
+</html>
