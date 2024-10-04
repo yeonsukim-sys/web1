@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+        }
+        
+        .height_section {
+            width: 100%;
+            height: 1080px;
+            background-color: black;
+        }
+
+        .sticky_box {
+            display: flex;
+            
+        }
+
+        .sticky_box > figure {
+            position: sticky;
+            width: 50%;
+            height: 100vh;
+            top: 0;
+            flex-shrink: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text_box {
+            margin: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section class="height_section"></section>
+    <section class="sticky_box">
+        <figure>
+            <img class="sticky_img" src="./sticky.jpg" alt="애플_로고">
+        </figure>
+        <div class="text_container">
+            <div class="text_box">
+                <h2>심플함 그 자체</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, culpa non possimus, velit consequatur sapiente rerum quaerat officia temporibus,
+                     magni voluptatem! Unde, voluptatum! Tenetur, 
+                    enim reiciendis? Quae aliquid laudantium saepe?</p>
+            </div>
+
+            <div class="text_box">
+                <h2>심플함 그 자체</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, culpa non possimus, velit consequatur sapiente rerum quaerat officia temporibus,
+                     magni voluptatem! Unde, voluptatum! Tenetur, 
+                    enim reiciendis? Quae aliquid laudantium saepe?</p>
+            </div>
+
+            <div class="text_box">
+                <h2>심플함 그 자체</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, culpa non possimus, velit consequatur sapiente rerum quaerat officia temporibus,
+                     magni voluptatem! Unde, voluptatum! Tenetur, 
+                    enim reiciendis? Quae aliquid laudantium saepe?</p>
+            </div>
+        </div>
+    </section>
+    <section class="height_section"></section>
+</body>
+</html>
