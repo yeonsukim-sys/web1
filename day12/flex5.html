@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align_items_container</title>
+    <style>
+        div {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        article {
+            height: 800px;
+            display: flex;
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        .flex_start {
+            align-items: flex-start;
+        }
+
+        .flex_end {
+            align-items: flex-end;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .baseline_text {
+            font-size: 100px;
+            width: 500px;
+            height: 100px;
+            text-align: center;
+        }
+
+        .baseline_text + div {
+            font-size: 150px;
+        }
+
+        .stretch > div {
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="align_items_container">
+        <article class="flex-start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="flex-start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="flex-end">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="flex-center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="flex-baseline">
+            <div>1</div>
+            <div class="baseline_text">2</div>
+            <div>3</div>
+        </article>
+        <article class="stretch">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+    </section>
+</body>
+</html>

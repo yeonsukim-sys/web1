@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify content</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px;
+        }
+
+        article {
+            border: 1px solid #000;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+        }
+
+        .start {
+            justify-content: flex-start;
+        }
+
+        .end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+            /* 실무에서도 자주 쓰임 */
+        }
+
+        .between {
+            justify-content: space-between;
+            /* 아이템들 사이에  균일한 간격을 형성해준다
+            특징 : 부모요소의 벽에 딱 붙는 특징 
+            없으면 안되는 자주 쓰이는 요소 */
+        }
+
+        .around {
+            justify-content: space-around;
+            /* 각 아이템들의 양 옆으로 간격이 생긴다
+            즉, 아이템들의 around 주변에 간격을 만들어준다 */
+        }
+
+        .evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <section class="justify_content">
+        <article class="start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="end">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="between">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="around">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="evenly">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+    </section>
+</body>
+</html>
