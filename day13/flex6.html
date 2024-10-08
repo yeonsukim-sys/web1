@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_6</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: aqua;
+            border: 1px solid #000;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+        
+        .box {
+            background-color: deeppink;
+            border: 1px solid #000;
+            height: 100px;
+            margin: 10px;
+            width: 100px;
+            word-wrap: break-word;
+            /* flex-basis: 100px; */
+            /* flex-basis 는 기본 너비를 조절하기 때문에
+            기본 너비 이상의 컨텐츠가 오면 넘쳐나는 콘텐츠의 크기를
+            그대로 가지고 오게 된다 즉 flex-basis에 선언된 너비값은 최소한의
+            너비값이라고 생각하기 */
+        }
+
+        .grow,
+        .shrink {
+            border: 1px solid #000;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .grow:nth-child(1) {
+            flex-grow: 1;
+        }
+
+        .grow:nth-child(2) {
+            flex-grow: 1;
+        }
+
+        .grow:nth-child(3) {
+            flex-grow: 1;
+        }
+
+        .shrink {
+            width: 50%;
+        }
+
+        .shrink:nth-child(1) {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">boxboxboxboxboboxboxbox</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+    </div>
+
+    <div class="container">
+        <div class="grow">item</div>
+        <div class="grow">item</div>
+        <div class="grow">item</div>
+    </div>
+
+    <div class="container">
+        <div class="shrink">item</div>
+        <div class="shrink">item</div>
+        <div class="shrink">item</div>
+    </div>
+</body>
+</html>
