@@ -5,30 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>카드 UI</title>
     <style>
-       h2 {
-        font-size: 25px;
-        font-weight: bold;
-       }
-       .img_box {
-        width: 200px;
-        height: 500px;
-        background: url(./카드\ ui.avif)
+        .card_item {
+            align-items: center;
+        }
         
-       }
+        .card_box {
+            width: 300px;
+            height: 500px;
+            border-radius: 25px;
+            background-image:url(./카드\ ui.avif);
+            background-size: contain;
+            position: absolute;
+        }
+        h2 {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            display: inline-block;
+            left: auto;
+            bottom: auto;
+            color: #fff;
+        }
+
+        .push_buton {
+            width: 100px;
+            height: 50px;
+            background-color: bisque;
+            border-radius: 50px;
+            
+        }
+
+        .push_buton:hover {
+            background-color: burlywood;
+            transition: 0.3s;
+        }
     </style>
 </head>
 <body>
-    <article>
-        <figure></figure>
-        <div>
-            <h2>오사카</h2>
-                <div>
-                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.triptojapan.com%2Fko%2Fblog%2Fosaka-attractions-top-things-to-see-and-do&psig=AOvVaw1ExQBzi4EQ4CtYxlcK1ANW&ust=1728445211587000&source=images&cd=vfe&opi=89978449&ved=0CAMQjB1qFwoTCMDF26nu_YgDFQAAAAAdAAAAABAD">
-
-                    </a>
+    <article class="card item">
+        <figure>
+            <a href="https://www.agoda.com/ko-kr/?NaPm=ct%3Dm2024nir%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3Dnull%7Chk%3D9210163d7b15e8546e9548a3767bc46a7d96c2de&cid=1719676&ds=Gv0lU14YLPy6ADMg">
+                <div class="card_box">
+                    <h2>오사카</h2>
+                        <button class="push_buton">둘러보기</button>
                 </div>
-            <div class="img_box"></div>
-        </div>
+            </a>
+        </figure>
     </article>
 </body>
 </html>
