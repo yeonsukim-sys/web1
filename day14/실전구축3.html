@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펼쳐지는 카드ui</title>
+    <style>
+        .card {
+            position: relative;
+            display: flex;
+            width: 100%;
+        }
+
+        .card > div {
+            width: 40%;
+        }
+
+        .card_1{
+            height: 500px;
+            background: url(./반응형\ 카드ui.jpg);
+            background-size: cover;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            padding: 16px;
+            flex-direction: column;
+
+        }
+
+        .card_2 {
+            height: 500px;
+            background: url(./2번.jpg);
+            background: cover;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            padding: 16px;
+            flex-direction: column;
+        }
+
+        .card_3 {
+            height: 500px;
+            background: url(./3.jpg);
+            background: cover;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            padding: 16px;
+            flex-direction: column;
+        }
+
+        div > p {
+            margin: 50px
+        }
+
+        h2 {
+           position: relative;
+           color: #fff;
+           font-size: 50px;
+        }
+       
+        .card > div:hover{
+            background-size:cover;
+            flex-shrink: 0;
+            transition:0.3s;
+        }
+        
+        .card_1 {
+            background-color: black;
+            font-size: 24px;
+            z-index: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="card">
+        <div class="card_1">
+            <p>
+                Environmental
+            </p>
+            <h2>
+                환경
+            </h2>
+        </div>
+        <div class="card_2">
+            <p>
+                social
+            </p>
+            <h2>
+                사회
+            </h2>
+        </div>
+        <div class="card_3">
+            <p>
+                governance
+            </p>
+            <h2>
+                지배구조
+            </h2>
+        </div>
+        
+    </section>
+</body>
+</html>
